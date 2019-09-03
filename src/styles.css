@@ -33,8 +33,8 @@
 .global_inner_small {
   position: fixed;
   top: calc(15% - 33px);
-  left: calc(15% + 80px);
-  right: calc(15% + 80px);
+  left: calc(30% - 33px);
+  right: calc(30% - 33px);
   bottom: calc(15% - 33px);
   background: white;
   z-index: 899902;

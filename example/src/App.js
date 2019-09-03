@@ -16,7 +16,7 @@ export default class App extends Component {
     return (
       <div style={{ margin: '30px'}}>
         <button onClick={() => this.setState({ modalShow: true})} className="button">Open Modal</button>
-        <SmoothieModal isShow={this.state.modalShow} handleClose={() => this.setState({ modalShow: false })}>
+        <SmoothieModal isShow={this.state.modalShow} handleClose={() => this.setState({ modalShow: false })} smallModal>
           <div style={{ marginTop: '50px', textAlign: 'center'}}>Smoothie Modal 🦄🦄</div>
         </SmoothieModal>
       </div>
