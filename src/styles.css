@@ -1,0 +1,68 @@
+/* add css styles here (optional) */
+
+.test {
+  display: inline-block;
+  margin: 2em auto;
+  border: 2px solid #000;
+  font-size: 2em;
+}
+
+.global {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 899900;
+  display: block;
+}
+
+.global_inner {
+  position: fixed;
+  top: calc(15% - 33px);
+  left: calc(15% - 33px);
+  right: calc(15% - 33px);
+  bottom: calc(15% - 33px);
+  background: white;
+  z-index: 899902;
+  font-size: calc(0.8vw + 15px);
+  box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.global_inner_small {
+  position: fixed;
+  top: calc(15% - 33px);
+  left: calc(15% + 80px);
+  right: calc(15% + 80px);
+  bottom: calc(15% - 33px);
+  background: white;
+  z-index: 899902;
+  font-size: calc(0.8vw + 15px);
+  box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.global_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.88);
+  z-index: 899901;
+}
+
+.global_close_button {
+  position: absolute;
+  right: 0;
+  background: transparent;
+  cursor: pointer;
+  margin: 12px;
+  width: 32px;
+  height: 32px;
+}
+
+.global_close_image {
+  width: 18px;
+}
