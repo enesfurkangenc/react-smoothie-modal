@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-smoothie-modal.svg)](https://www.npmjs.com/package/react-smoothie-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[**Documentation**](https://react-smoothie-modal.netlify.com/)
+
 ## Install
 
 ```bash

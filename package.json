@@ -18,8 +18,8 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d docz-site/.docz"
+    "predeploy": "cd docz-site && yarn install && yarn run build",
+    "deploy": "gh-pages -d docz-site"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
