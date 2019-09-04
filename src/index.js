@@ -12,16 +12,17 @@ export default class SmoothieModal extends Component {
       PropTypes.node
     ]).isRequired,
     handleClose: PropTypes.func,
-    smallModal: PropTypes.string
+    smallModal: PropTypes.string,
+    Backdrop: PropTypes.bool
   }
 
   render() {
-    const { children, handleClose, smallModal } = this.props
+    const { children, handleClose, smallModal, Backdrop } = this.props
 
     const Modal = () => {
       return (
         <div className={styles.global}>
-          <div className={styles.global_background} />
+          <div className={styles.global_background} onClick={Backdrop ? handleClose : null} />
           <div className={smallModal ? styles.global_inner_small : styles.global_inner}>
             <div
               className={styles.global_close_button}
