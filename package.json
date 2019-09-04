@@ -1,0 +1,32 @@
+{
+  "name": "react-smoothie-modal",
+  "private": true,
+  "version": "1.0.0",
+  "description": "react smoothie modal component 🦄",
+  "license": "MIT",
+  "author": {
+    "name": "Enes Genc",
+    "email": "enecgenc@gmail.com"
+  },
+  "repository": "enesfurkangenc/react-smoothie-modal",
+  "files": [
+    "src/",
+    "doczrc.js",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "docz dev",
+    "build": "docz build",
+    "serve": "docz serve"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "docz": "next",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-smoothie-modal": "^1.0.3",
+    "scheduler": "^0.15.0"
+  }
+}

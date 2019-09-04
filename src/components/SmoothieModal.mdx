@@ -1,0 +1,81 @@
+---
+name: Smoothie Modal 🦄
+menu: Components
+route: /smoothiemodal
+---
+
+import { Playground, Props } from "docz";
+import { useState } from "react";
+import SmoothieModal from "react-smoothie-modal";
+import { Button } from "./Button";
+import Smoothie from "./SmoothieModal";
+
+# Smoothie Modal 🦄🦄
+
+React Js lightweight Modal Component
+
+## Properties
+
+<Props of={Smoothie} />
+
+## Basic Usage
+
+<Playground>
+  {() => {
+    const [toggle, setToggle] = useState(false);
+    return (
+      <div style={{ margin: "30px" }}>
+        <SmoothieModal isShow={toggle} handleClose={() => setToggle(false)}>
+          <div style={{ marginTop: "50px", textAlign: "center" }}>
+            Smoothie Modal 🦄🦄
+          </div>
+        </SmoothieModal>
+        <Button onClick={() => setToggle(true)}>Open Modal</Button>
+      </div>
+    );
+  }}
+</Playground>
+
+## Small Modal
+
+<Playground>
+  {() => {
+    const [toggle, setToggle] = useState(false);
+    return (
+      <div style={{ margin: "30px" }}>
+        <SmoothieModal
+          isShow={toggle}
+          handleClose={() => setToggle(false)}
+          smallModal
+        >
+          <div style={{ marginTop: "50px", textAlign: "center" }}>
+            Smoothie Modal 🦄🦄
+          </div>
+        </SmoothieModal>
+        <Button onClick={() => setToggle(true)}>Open Modal Small</Button>
+      </div>
+    );
+  }}
+</Playground>
+
+## Backdrop
+
+<Playground>
+  {() => {
+    const [toggle, setToggle] = useState(false);
+    return (
+      <div style={{ margin: "30px" }}>
+        <SmoothieModal
+          isShow={toggle}
+          handleClose={() => setToggle(false)}
+          Backdrop
+        >
+          <div style={{ marginTop: "50px", textAlign: "center" }}>
+            Smoothie Modal 🦄🦄
+          </div>
+        </SmoothieModal>
+        <Button onClick={() => setToggle(true)}>Backdrop</Button>
+      </div>
+    );
+  }}
+</Playground>
