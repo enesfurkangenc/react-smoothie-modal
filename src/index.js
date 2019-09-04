@@ -12,7 +12,7 @@ export default class SmoothieModal extends Component {
       PropTypes.node
     ]).isRequired,
     handleClose: PropTypes.func,
-    smallModal: PropTypes.string,
+    smallModal: PropTypes.bool,
     Backdrop: PropTypes.bool
   }
 

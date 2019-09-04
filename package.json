@@ -1,6 +1,6 @@
 {
   "name": "react-smoothie-modal",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react smoothie modal component 🦄",
   "author": "enesfurkangenc",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d docz-site/.docz"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
