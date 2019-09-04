@@ -1,0 +1,37 @@
+{
+  "name": "react-smoothie-modal",
+  "private": true,
+  "version": "1.0.0",
+  "description": "react smoothie modal component 🦄",
+  "license": "MIT",
+  "author": {
+    "name": "Enes Genc",
+    "email": "enecgenc@gmail.com"
+  },
+  "repository": "enesfurkangenc/react-smoothie-modal",
+  "files": [
+    "src/",
+    "doczrc.js",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "docz": "next",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-smoothie-modal": "^1.0.3",
+    "scheduler": "^0.15.0",
+    "gatsby": "2.15.6",
+    "gatsby-plugin-typescript": "2.1.6",
+    "gatsby-plugin-eslint": "2.0.5",
+    "gatsby-theme-docz": "next"
+  },
+  "devDependencies": {}
+}
