@@ -1,6 +1,6 @@
 {
   "name": "react-smoothie-modal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react smoothie modal component 🦄",
   "author": "enesfurkangenc",
   "license": "MIT",
@@ -59,8 +59,12 @@
     "dist"
   ],
   "keywords": [
+    "react",
+    "reactjs",
+    "react modal",
+    "react-modal",
+    "react-modal-component",
     "react-smoothie-model",
-    "smoothie-modal",
-    "react"
+    "smoothie-modal"
   ]
 }
