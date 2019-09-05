@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import ClassNames from 'classnames'
 
 import styles from './styles.css'
 import Icon from './Icon/cancel.svg'
@@ -13,15 +14,17 @@ export default class SmoothieModal extends Component {
     ]).isRequired,
     handleClose: PropTypes.func,
     smallModal: PropTypes.bool,
-    Backdrop: PropTypes.bool
+    Backdrop: PropTypes.bool,
+    animation: PropTypes.bool
   }
 
   render() {
-    const { children, handleClose, smallModal, Backdrop } = this.props
+    const { children, handleClose, smallModal, Backdrop, animation } = this.props
 
     const Modal = () => {
+      let globalAnimation = ClassNames(styles.global, animation ? styles.overlay_animate_fade : null)
       return (
-        <div className={styles.global}>
+        <div className={globalAnimation}>
           <div className={styles.global_background} onClick={Backdrop ? handleClose : null} />
           <div className={smallModal ? styles.global_inner_small : styles.global_inner}>
             <div

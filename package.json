@@ -1,6 +1,6 @@
 {
   "name": "react-smoothie-modal",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "react smoothie modal component 🦄",
   "author": "enesfurkangenc",
   "license": "MIT",
@@ -68,5 +68,8 @@
     "react-modal-component",
     "react-smoothie-model",
     "smoothie-modal"
-  ]
+  ],
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
 }
