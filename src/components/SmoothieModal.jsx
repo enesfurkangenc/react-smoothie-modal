@@ -10,13 +10,15 @@ SmoothieModal.propTypes = {
   isShow: PropTypes.bool,
   handleClose: PropTypes.func,
   smallModal: PropTypes.bool,
-  Backdrop: PropTypes.bool
+  Backdrop: PropTypes.bool,
+  animation: PropTypes.bool
 }
 
 SmoothieModal.defaultProps = {
   isShow: false,
   smallModal: false,
-  Backdrop: false
+  Backdrop: false,
+  animation: false
 }
 
 export default SmoothieModal

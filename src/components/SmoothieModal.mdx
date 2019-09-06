@@ -79,3 +79,26 @@ React Js lightweight Modal Component
     );
   }}
 </Playground>
+
+## With Animation
+
+<Playground>
+  {() => {
+    const [toggle, setToggle] = useState(false);
+    return (
+      <div style={{ margin: "30px" }}>
+        <SmoothieModal
+          isShow={toggle}
+          handleClose={() => setToggle(false)}
+          Backdrop
+          animation
+        >
+          <div style={{ marginTop: "50px", textAlign: "center" }}>
+            Smoothie Modal 🦄🦄
+          </div>
+        </SmoothieModal>
+        <Button onClick={() => setToggle(true)}>With Animation</Button>
+      </div>
+    );
+  }}
+</Playground>
