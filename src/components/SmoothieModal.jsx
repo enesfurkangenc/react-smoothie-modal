@@ -11,14 +11,17 @@ SmoothieModal.propTypes = {
   handleClose: PropTypes.func,
   smallModal: PropTypes.bool,
   Backdrop: PropTypes.bool,
-  animation: PropTypes.bool
+  animation: PropTypes.bool,
+  escKey: PropTypes.bool,
+  extraStyle: PropTypes.string
 }
 
 SmoothieModal.defaultProps = {
   isShow: false,
   smallModal: false,
   Backdrop: false,
-  animation: false
+  animation: false,
+  escKey: false
 }
 
 export default SmoothieModal

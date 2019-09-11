@@ -9,6 +9,7 @@ import { useState } from "react";
 import SmoothieModal from "react-smoothie-modal";
 import { Button } from "./Button";
 import Smoothie from "./SmoothieModal";
+import "./extra.css";
 
 # Smoothie Modal 🦄🦄
 
@@ -98,6 +99,31 @@ React Js lightweight Modal Component
           </div>
         </SmoothieModal>
         <Button onClick={() => setToggle(true)}>With Animation</Button>
+      </div>
+    );
+  }}
+</Playground>
+
+## Esc Key and ExtraCss
+
+<Playground>
+  {() => {
+    const [toggle, setToggle] = useState(false);
+    return (
+      <div style={{ margin: "30px" }}>
+        <SmoothieModal
+          isShow={toggle}
+          handleClose={() => setToggle(false)}
+          Backdrop
+          animation
+          escKey
+          extraStyle={"ExtraCss"}
+        >
+          <div style={{ marginTop: "50px", textAlign: "center" }}>
+            Smoothie Modal 🦄🦄
+          </div>
+        </SmoothieModal>
+        <Button onClick={() => setToggle(true)}>Esc Key ExtraCss</Button>
       </div>
     );
   }}
