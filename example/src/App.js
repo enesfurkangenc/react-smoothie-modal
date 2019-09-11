@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component } from "react";
 
 import SmoothieModal from "react-smoothie-modal";
@@ -22,7 +23,7 @@ export default class App extends Component {
         <SmoothieModal isShow={this.state.normalModalShow} handleClose={() => this.setState({ normalModalShow: false })}>
           <div style={{ marginTop: '50px', textAlign: 'center'}}>Smoothie Modal 🦄🦄</div>
         </SmoothieModal>
-        <SmoothieModal isShow={this.state.backdropShow} handleClose={() => this.setState({ backdropShow: false })} Backdrop animation>
+        <SmoothieModal isShow={this.state.backdropShow} handleClose={() => this.setState({ backdropShow: false })} Backdrop animation escKey extraStyle={'deneme'}>
           <div style={{ marginTop: '50px', textAlign: 'center'}}>Smoothie Modal 🦄🦄</div>
         </SmoothieModal>
       </div>
